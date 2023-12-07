@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        class ParentClass{
+            constructor(){
+                console.log("Parent");
+            }
+            def(){
+                console.log("hi from parent");
+            }
+        }
+        class MyClass extends ParentClass{
+           
+
+            constructor(){
+                super()
+                console.log("Constructor Called");
+            }
+            a=10;
+            abc(){
+                console.log("M1");
+
+            }
+        }
+         obj=new MyClass();
+         obj.abc();
+         obj.def();
+
+    </script> -->
+    <!-- <script>
+        setInterval(() => {
+            console.log("Each 1 sec");
+        }, 1000);
+        setInterval(() => {
+            console.log("Each 2 sec");
+        }, 2000);
+        setInterval(() => {
+            console.log("Each 3 sec");
+        }, 3000);
+
+
+        setInterval(()=>{
+            console.log("Hello");  
+        }, 5000);
+
+
+        console.log("Hi1");
+        console.log("Hi2");
+        console.log("Hi3");
+        console.log("Hi4");
+        console.log("Hi5");
+        console.log("Hi6");
+        console.log("Hi7");
+        console.log("Hi8");
+        console.log("Hi9");
+        //Fetch api return an api it can be resolved or rejected
+        //resolved-.then
+        //rejected-catch
+
+
+    </script> -->
+    <!-- <script>
+        const p=new Promise((res,rej)=>{
+            //res("Hello")
+            rej("Bye")
+        });
+        p.then((msg)=>console.log("Success"+msg))
+         .catch((msg)=>console.log("Rejected "))
+
+    </script> -->
+    <script>
+        function show(res)
+        {
+            res.map((val=>{
+                document.write(val.name+"<br />");
+            }))
+        }
+
+
+        const url = "https://jsonplaceholder.typicode.com/users";
+        fetch(url)
+        .then((res)=>res.json())
+        .then((res)=>show((res)))
+        .catch((err)=>console.log(err));
+        // Console.log(res) shows output in console
+
+    </script>
+
+</body>
+</html>

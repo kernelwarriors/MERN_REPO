@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      tr {
+        text-align: left;
+        width: 100%;
+      }
+      table {
+        margin: auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        
+        text-align: left;
+        width: 50%;
+        border: 1px solid black;
+      }
+      input {
+        
+        border-collapse: collapse;
+      }
+      #Languages {
+       width: 2%;
+      }
+      label{
+        display: fe;
+      }
+      .expand {
+        width: 98%;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: 100vh;
+      }
+      button{
+        margin: 0 0 350px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- First Name -->
+        <td><label for="FirstName">First Name</label></td>
+        <td><input class="expand" type="text" name="FirstName" id="FirstName" /></td>
+      </tr>
+      <tr>
+        <!-- Last Name -->
+        <td><label for="LastName">Last Name</label></td>
+        <td><input class="expand" type="text" name="LastName" id="LastName" /></td>
+      </tr>
+      <tr>
+        <!-- Email -->
+        <td><label for="Email">Email</label></td>
+        <td><input class="expand" type="email" name="email" id="email" /></td>
+      </tr>
+      <tr>
+        <!-- Password -->
+        <td><label for="password">Password</label></td>
+        <td><input class="expand" type="password" name="password" id="password" /></td>
+      </tr>
+      <tr>
+        <!-- Repassword -->
+        <td><label  for="Repassword">Re-enter Password</label></td>
+        <td><input class="expand" type="password" name="Repassword" id="Repassword" /></td>
+      </tr>
+      <tr>
+        <!-- Gender -->
+        <td rowspan="2">
+            <label for="Gender">Gender:</label>
+            
+        </td>
+        <td class="Gen">Male<input type="radio" name="Gender"/></td>
+      </tr>
+      <tr>
+        <td class="Gen">Female<input type="radio" name="Gender"/></td>
+      </tr>
+      <tr>
+        <!-- Age -->
+        <td><label for="Age">Age</label></td>
+        <td><input class="expand" type="number" name="Age" id="Age" /></td>
+      </tr>
+      <tr>
+        <!-- Phone number -->
+        <td><label for="Phone">Phone Number</label></td>
+        <td><input class="expand" type="tel" name="Phone" id="Phone" /></td>
+      </tr>
+      <tr>
+        <!-- Address -->
+        <td><label for="Address">Address</label></td>
+        <td> <textarea  name="Address" rows="4" cols="100"></textarea></td>
+      </tr>
+      <tr>
+           <td><label for="State">State</label></td>
+        <td><input type="text" name="State" id="State" /></td>
+      </tr>
+      <tr>
+        <!-- Country -->
+        <td><label for="Country">Country</label></td>
+        <td><select  name="country">
+            <option value="" disabled selected>Select your country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select></td>
+      </tr>
+      <tr>
+        <!-- languages -->
+        <td><label for="Languagess">Languages Known</label></td>
+        <td>
+         
+            <input type="checkbox" name="Languages" id="Languages" />English
+            <input type="checkbox" name="Languages" id="Languages" />Kannada
+            <input type="checkbox" name="Languages" id="Languages" />Hindi
+            <input type="checkbox" name="Languages" id="Languages" />Telgu
+    
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input class="Languages" type="checkbox">Herby I declare all given details are true</td>
+      </tr>
+      <tfoot>
+        <tr>
+            <td colspan="2" style="text-align: right;">Login in to ethnus website <a href="mailto:recipient@gmail.com">Ethnus</a></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div>
+        <button>Register</button>
+    </div>
+  </body>
+</html>

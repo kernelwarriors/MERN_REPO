@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+        }
+        input{
+            margin: 5px 0px 5px 20px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        label{
+            margin: 5px 0px 5px 20px;
+        }
+        button{
+            width: 20%;
+            margin: 5%;
+        }
+        input,select{
+            width: 80%;
+        }
+        select{
+            margin: 5px 0px 5px 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- can be done without usning flex -->
+    <!-- datalist options can be given in form -->
+    <form action="">
+     <div>
+        <label for="fname">Full Name</label>
+        <label for="username">Username</label>
+        <label for="password">Password</label>
+        <label for="">RePassword</label>
+        <label for="Address">Address</label>
+        <label for="Age">Age</label>
+        <label for="Gender">Gender</label>
+        <button>Save</button>
+     </div>
+       <div>
+        <input type="text" name="fname" id="fname"/>
+        <input type="text" name="username" id="username"/>
+        <input type="password" name="password" id="password"/>
+        <input type="password" name="password" id="repassword"/>
+        <input type="text" name="Address"/>
+        <input type="number" name="Age"/>
+        <select name="Gender" id="">
+            <option value="op1">Male</option>
+            <option value="op2">Female</option>
+        </select>
+       </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Location objects</h1>
+    <button onclick="f1()">Assign</button>
+    <button onclick="f2()">Replace</button>
+    <button onclick="f3()">Refresh</button>
+
+    <script>
+        console.log("Navigator Object");
+        console.log(navigator.appName);
+        console.log(navigator.appVersion);
+        console.log(navigator.language);
+        console.log(navigator.platform);
+        console.log(navigator.onLine);
+        console.log(navigator.cookieEnabled);
+        console.log(navigator.geolocation);
+        console.log("Screen objects");
+        console.log(screen.availHeight);
+        console.log(screen.height);
+        console.log(screen.availWidth);
+        console.log(screen.width);
+        console.log(screen.colorDepth);
+        console.log(screen.pixelDepth);
+
+        function f1(){
+            location.assign("https://www.ethnus.com");
+        }
+        function f2(){
+            location.replace("https://www.ethnus.com");
+        }
+        function f3(){
+            location.reload();
+        }
+        
+    </script>
+</body>
+</html>

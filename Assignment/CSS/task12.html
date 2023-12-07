@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task12</title>
+</head>
+<style>
+    body{
+        background-color: rgba(206, 9, 9, 0.822);
+    }
+    div{
+        margin: auto;
+        margin-top: 15em;
+        width: 50%;
+        background-color: rgb(133, 3, 3);
+    }
+    form{
+        color: white;
+        margin: auto;
+        width: 50%;
+    }
+    input,select{
+        margin: 1em 1em 1em 4em;
+        height: 2em;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .Gen{
+        margin: 1em;
+        margin-left: 3em;
+        height: 1em;
+        width: 1em;
+    }
+    textarea{
+        margin: 1em 1em 1em 4em;
+        height: 5em;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    button{
+        width: 100%;
+        height: 4em;
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        font-size: medium;
+        cursor: pointer;
+        margin-bottom: 3em;
+    }
+</style>
+<body>
+    <div>
+        <form action="">
+            <table>
+               <tr>
+                <td><label for="name">Name:</label></td>
+                <td colspan="3"><input type="text" name="" id=""></td>
+               </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td colspan="3"><input type="email" name="" id=""></td>
+                </tr>
+                <!-- Password -->
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td colspan="3"><input type="password" name="" id=""></td>
+                </tr>
+                <!-- Phone number -->
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td colspan="3"><input type="tel" name="" id=""></td>
+                </tr>
+                <!-- Gender -->
+                <tr>
+                    <td><label for="Gender">Gender:</label></td>
+                    <td><input class="Gen" type="radio" name="Gender" id=""/>:Male</td>
+                    <td><input class="Gen" type="radio" name="Gender" id=""/>:Female</td>
+                    <td><input class="Gen" type="radio" name="Gender" id=""/>:Other</td>
+
+                </tr>
+                <!-- Language -->
+                <tr>
+                    <td><label for="Lang">Language</label></td>
+                    <td colspan="3">
+                        <select name="Lang" id="">
+                            <option disabled>Select your language...</option>
+                            <option value="option1">English</option>
+                            <option value="option2">Hindi</option>
+                            <option value="option3">Marathi</option>
+                            <option value="option4">Gujarati</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Zip Code -->
+                    <td><label for="Zip">Zip Code:</label></td>
+                    <td colspan="3"><input type="number" name="" id=""></td>
+                </tr>
+                <tr>
+                    <!-- About -->
+                    <td><label for="About">About:</label></td>
+                    <td colspan="3"><textarea name="" id="" cols="30" rows="10" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+            </table>
+            <button>Register</button>
+        </form>
+    </div>
+</body>
+</html>

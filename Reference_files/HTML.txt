@@ -1,0 +1,120 @@
+Version of HTML
+HTML 1.0 -> 1990
+HTML 2.0 -> 1995
+HTML 3.0 -> 1997
+HTML 4.01 -> 1999 [Major version]
+HTML 5 -> 2012 [Latest version]
+
+Usage of HTML -> develop the static webpages
+
+Webpages -> single HTML file
+Website -> collection of webpages
+Web  -> collection of website
+
+static webpages -> attractive webpage -> CSS
+Bootstrap is framework of CSS [predefined styles]
+static webpage -> dynamic webpage -> JavaScript
+
+HTML is not programming language, it is markup language [made of tags]
+
+Structure of HTML
+<!DOCTYPE html>  -> Version of HTML
+<html> -> Entire document
+    <head> -> Information about the webpage
+        <meta> -> Additional information of webpage
+        <title> -> It gives the title of the webpage
+    </head>
+    <body> -> Content of the webpage
+    </body>
+</html>
+
+Syntax for HTML element
+opening tag        closing tag
+<tagName attrName="attrValue"> Content </tagName>
+
+To run the HTML file
+Right click on the file -> Choose Copy Path
+Open browser -> Paste the path in the URL -> press enter
+
+Entire HTML element is made up of Tags and attribute
+
+h1,h2,h3,h4,h5,h6 -> Heading
+p -> paragraph
+b -> bold
+i -> italic
+u -> underline
+sup -> superscript [text will be available above the baseline of the normal text]
+sub -> subscript [text will be available below the baseline of the normal text]
+big -> increase the font size by 1
+small -> decrease the font size by 1
+code -> Change the font face
+del -> it will have a line though over the text
+cite -> non blocking tag with italic styling
+address -> blocking tag with italic styling
+abbr -> Abbrviation tag 
+
+Void element/ empty tags / Self-closing tag
+br - break the line
+hr - generate a hozitonal rule in the webpage
+
+List in HTML
+
+ol - Numbered list [type= 1 | A | a | I | i] [start = numbers]
+ul - Bulleted list [type= disc | circle | square]
+li - list items
+dl - definition list
+dt - definition term
+dd - data definition
+
+a - Anchor tag [Navigate from one page to another] 
+Attributes: href="url" target= _blank[new tab] | _self [same frame]
+1. Text Link 
+2. Image Link
+3. Bookmark Link
+4. Email Link
+
+img - Image [src="imagePath" alt="AlternateText" height="" width=""]
+
+table [border= 0 | 1] [bordercolor=""] [bgcolor=""] [height="" width=""] 
+[cellpadding(space between the border of the cell and content of the cell)]
+[cellspacing(space between two cells)]
+caption 
+tr
+td
+th 
+
+form
+    label
+    
+    SINGLE LINE INPUT
+    input
+        Attributes
+            1. text
+            2. number
+            3. password
+            4. tel 
+            5. url
+            6. email
+            7. search
+            8. checkbox  
+            9. radio  -> name attribute is must for radio button
+            10. button
+            11. submit
+            12. reset -> Clear the form
+            13. file
+            14. range
+            15. color
+            16. date
+            17. week
+            18. month
+            19. datetime-locale
+            20. time
+    
+    MUTLILINE INPUT
+    textarea
+        1. rows -> height of the textarea
+        2. cols -> width of the textarea
+    
+    DROPDOWN
+    select
+        option
